@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Akening Diatta | Portfolio</title>
+
+  <!-- Police Google Fonts : Poppins pour les titres, Inter pour le texte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icônes (Font Awesome) pour les réseaux sociaux et petits pictogrammes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#accueil" class="logo">CAD</a>
+
+      <!-- Bouton pour ouvrir/fermer le menu sur mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#accueil" class="nav-link">Accueil</a>
+        <a href="#apropos" class="nav-link">À propos</a>
+        <a href="#competences" class="nav-link">Compétences</a>
+        <a href="#projets" class="nav-link">Projets</a>
+        <a href="#parcours" class="nav-link">Parcours</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ SECTION HERO ============ -->
+  <section id="accueil" class="hero">
+    <div class="hero-container">
+      <div class="hero-text fade-section">
+        <p class="hero-eyebrow">Étudiant en Génie Logiciel — Sénégal</p>
+        <h1 class="hero-title">Christian Akening Diatta</h1>
+        <p class="hero-subtitle">
+          Je transforme mes idées en solutions numériques grâce à la programmation.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="hero-photo fade-section">
+        <img src="media/profil.jfif" alt="" class="tof">
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- ============ SECTION À PROPOS ============ -->
+  <section id="apropos" class="section apropos">
+    <div class="section-container fade-section">
+      <h2 class="section-title">À propos de moi</h2>
+      <p class="apropos-text">
+        Je suis Christian Akening Diatta, étudiant en L2 Génie Logiciel à l'Institut Supérieur d'Informatique(ISI),
+        passionné par le
+        développement web, les bases de données, la programmation et les nouvelles technologies.
+        J'aime apprendre continuellement et participer à des projets qui me permettent de
+        développer mes compétences techniques.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SECTION COMPÉTENCES ============ -->
+  <section id="competences" class="section competences">
+    <div class="section-container fade-section">
+      <h2 class="section-title">Mes compétences</h2>
+
+      <!-- Chaque compétence a une barre de progression.
+           L'attribut data-niveau contient le pourcentage à atteindre.
+           Le script.js lit cette valeur pour animer la barre. -->
+      <div class="skills-list">
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>HTML</span>
+            <span>90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-niveau="90"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>CSS</span>
+            <span>60%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-niveau="60"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>JavaScript</span>
+            <span>30%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-niveau="30"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>Python</span>
+            <span>25%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-niveau="25"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>C</span>
+            <span>50%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-niveau="50"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>SQL</span>
+            <span>80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-niveau="80"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-header">
+            <span>Git &amp; GitHub</span>
+            <span>55%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-niveau="55"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION PROJETS ============ -->
+  <section id="projets" class="section projets">
+    <div class="section-container fade-section">
+      <h2 class="section-title">Mes projets</h2>
+      <p class="section-subtitle">
+        <!-- Pour ajouter un nouveau projet, copie un bloc "project-card" ci-dessous
+        dans le fichier index.html et modifie le texte à l'intérieur. -->
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- Début d'une carte projet : copie ce bloc entier pour en ajouter un nouveau -->
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #1B4B91, #2E6FD9);">
+            <!-- <i class="fa-solid fa-droplet"></i> -->
+            <i class="fa-solid fa-ring"></i>
+          </div>
+          <div class="project-content">
+            <h3>Plateforme de Gestion de Mariage</h3>
+            <p>Application permettant de gérer l'organisation d'un mariage : invités,programme de la cérémonie,
+              réservation des prestataires et suivi des préparatifs.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <a href="https://chrisakening.github.io/Projet-Mariage/" class="btn btn-small">Voir le projet</a>
+          </div>
+        </div>
+        <!-- Fin de la carte projet -->
+
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #10141C, #3A4250);">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <div class="project-content">
+            <h3>Site Akening Automobile</h3>
+            <p>Site vitrine présentant des véhicules avec fiches détaillées et contact rapide.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <a href="https://chrisakening.github.io/Chris-Diatta/projet.html" class="btn btn-small">Voir le projet</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #2E6FD9, #5B6472);">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="project-content">
+            <h3>Système de gestion d'étudiants</h3>
+            <p>Outil pour enregistrer les étudiants, leurs notes et suivre leur progression.</p>
+            <div class="project-tags">
+              <span>SQL</span>
+              <span>Python</span>
+            </div>
+            <a href="#" class="btn btn-small">Voir le projet</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #1B4B91, #10141C);">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="project-content">
+            <h3>Projet SQL</h3>
+            <p>Conception d'une base de données relationnelle avec requêtes de gestion.</p>
+            <div class="project-tags">
+              <span>SQL</span>
+            </div>
+            <a href="#" class="btn btn-small">Voir le projet</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #2E6FD9, #1B4B91);">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <div class="project-content">
+            <h3>Projet Python</h3>
+            <p>Script d'automatisation de tâches répétitives pour gagner du temps.</p>
+            <div class="project-tags">
+              <span>Python</span>
+            </div>
+            <a href="#" class="btn btn-small">Voir le projet</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION PARCOURS ============ -->
+  <section id="parcours" class="section parcours">
+    <div class="section-container fade-section">
+      <h2 class="section-title">Mon parcours</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Obtention du BAC</h3>
+            <p>Fin des études secondaires et début de mon orientation vers l'informatique.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Entrée en Génie Logiciel</h3>
+            <p>Début de ma formation universitaire en Génie Logiciel.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Réalisation de projets universitaires</h3>
+            <p>Mise en pratique des connaissances à travers plusieurs projets concrets.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Développement de compétences en programmation</h3>
+            <p>Approfondissement continu en HTML, CSS, JavaScript, Python et SQL.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION SERVICES ============ -->
+  <section id="services" class="section services">
+    <div class="section-container fade-section">
+      <h2 class="section-title">Ce que je peux faire</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Création de sites web</h3>
+          <p>Des sites modernes, responsives et rapides adaptés à vos besoins.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>Applications simples</h3>
+          <p>Développement d'applications légères et faciles à utiliser.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-database"></i>
+          <h3>Bases de données SQL</h3>
+          <p>Conception de bases de données claires et bien organisées.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-brands fa-python"></i>
+          <h3>Automatisation Python</h3>
+          <p>Scripts pour automatiser les tâches répétitives.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-headset"></i>
+          <h3>Assistance informatique</h3>
+          <p>Aide et conseils pour vos petits problèmes techniques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION CONTACT ============ -->
+  <section id="contact" class="section contact">
+    <div class="section-container fade-section">
+      <h2 class="section-title">Contactez-moi</h2>
+
+      <div class="contact-wrapper">
+
+        <!-- Formulaire de contact -->
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" />
+            <span class="error-message" id="errorNom"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" />
+            <span class="error-message" id="errorEmail"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message"></textarea>
+            <span class="error-message" id="errorMessage"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          <p class="form-success" id="formSuccess">Votre message a bien été envoyé (simulation) !</p>
+        </form>
+
+        <!-- Coordonnées et réseaux sociaux -->
+        <div class="contact-info">
+          <a href="mailto:christian.diatta@email.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>christianakeningd@gmail.com</span>
+          </a>
+          <a href="tel:+221 77 178 43 09" class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+221 77 178 43 09</span>
+          </a>
+
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <!-- <a href="" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a> -->
+             <a href="https://wa.me/221771784309" aria-label="WhatsApp">  <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>&copy; <span id="anneeActuelle"></span> Christian Akening Diatta. Tous droits réservés.</p>
+    <div class="footer-socials">
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
